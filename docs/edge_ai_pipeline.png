@@ -1,0 +1,85 @@
+STEP 1 → Normalize Features
+│
+├── Raw Sensor Inputs
+│   ├── RPM
+│   ├── Current
+│   ├── Vibration
+│   └── Temperature
+│
+├── Apply StandardScaler
+│   z = (x − μ) / σ
+│
+└── Output:
+    Normalized feature vector
+
+                ↓
+
+STEP 2 → OneClassSVM Inference
+│
+├── RBF Kernel OneClassSVM
+├── Trained on normal motor data
+├── Exported using micromlgen
+├── Runs directly on ESP32
+│
+└── Output:
+    +1 = Normal
+    -1 = Anomaly
+
+                ↓
+
+STEP 3 → Mahalanobis Distance
+│
+├── Statistical anomaly detection
+├── Uses covariance matrix
+├── χ² threshold = 3.8549
+├── Detects multivariate deviation
+│
+└── Output:
+    Distance score
+
+                ↓
+
+STEP 4 → Physics Validation
+│
+├── Cross-sensor consistency rules
+│
+├── Rule A:
+│   High current + low RPM
+│   = locked rotor
+│
+├── Rule B:
+│   High vibration only
+│   = possible sensor noise
+│
+├── Rule C:
+│   High temperature
+│   = cooling failure
+│
+├── Rule D:
+│   Overspeed + normal current
+│   = tachometer artifact
+│
+└── Output:
+    Confidence multiplier
+
+                ↓
+
+STEP 5 → Fusion Score
+│
+├── Weighted sensor fusion
+│
+├── Formula:
+│   Fusion =
+│   0.35 × Vibration +
+│   0.30 × Current +
+│   0.20 × RPM +
+│   0.15 × Temperature
+│
+├── Final score range:
+│   0.0 → 1.0
+│
+└── Severity Levels:
+    ├── <0.25 → Normal
+    ├── 0.25–0.50 → Warning
+    ├── 0.50–0.75 → Critical
+    └── >0.75 → Emergency

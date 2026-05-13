@@ -1,5 +1,10 @@
-[DATA] RPM=240 | I=0.00A | Vib=0.029g | T=32.9°C
-[ML] OneClassSVM: ANOMALY
-[SCORE] Fusion=0.891
+[DATA] RPM=1800 Current=3.5 Vib=0.15 Temp=40
+[OCSVM] NORMAL
+[FUSION] Score=0.12
+
+[DATA] RPM=20 Current=10.5 Vib=0.82 Temp=75
+[OCSVM] ANOMALY
+[FUSION] Score=0.91
+[STATUS] Critical Fault
 [FAULT] Edge ML anomaly detected
 [EEPROM] Fault logged successfully

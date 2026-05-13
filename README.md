@@ -37,13 +37,13 @@ Patent-ready ML pipeline
 
 # Feature Distributions
 
-![Feature Distribution](ml/plots/feature_distributions.png)
+![Feature Distribution](ml/saved_models/feature_distributions.png)
 
 ---
 
 # Correlation Matrix
 
-![Correlation](ml/plots/correlation_matrix.png)
+![Correlation](results/correlation_matrix.png)
 
 ---
 

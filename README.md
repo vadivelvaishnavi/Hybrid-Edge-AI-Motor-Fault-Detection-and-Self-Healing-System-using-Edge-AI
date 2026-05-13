@@ -1,3 +1,8 @@
+![ESP32](https://img.shields.io/badge/ESP32-TinyML-blue)
+![Python](https://img.shields.io/badge/Python-ML-yellow)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Lite-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 # Hybrid Edge-AI Motor Fault Detection & Self-Healing System
 
 ESP32-based intelligent motor monitoring and predictive maintenance system using Edge AI, TinyML, and multi-sensor fusion for real-time fault detection without cloud dependency. :contentReference[oaicite:0]{index=0}

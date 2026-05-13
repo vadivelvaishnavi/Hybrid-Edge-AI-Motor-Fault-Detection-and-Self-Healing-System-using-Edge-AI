@@ -1,29 +1,50 @@
 # Hybrid Edge-AI Motor Fault Detection & Self-Healing System
 
-ESP32-based intelligent motor monitoring system using:
-
-- Edge AI
-- OneClassSVM
-- Autoencoder
-- Mahalanobis Distance
-- Multi-sensor fusion
-- EEPROM logging
-- Self-healing control
+ESP32-based intelligent motor monitoring and predictive maintenance system using Edge AI, TinyML, and multi-sensor fusion for real-time fault detection without cloud dependency.
 
 ---
 
-# Features
+# Overview
 
-Edge inference (<1ms)  
-Multi-sensor fusion  
-TinyML deployment on ESP32  
-Ensemble anomaly detection  
-Adaptive EMA baseline  
-Patent-ready ML pipeline  
+This project implements a complete Edge-AI motor protection pipeline on ESP32 using:
+
+- OneClassSVM anomaly detection
+- Autoencoder reconstruction analysis
+- Mahalanobis statistical distance
+- Ensemble fusion scoring
+- Adaptive EMA baseline tracking
+- Multi-sensor validation
+- EEPROM persistent fault logging
+- Self-healing fault recovery logic
+
+The system performs all inference locally on ESP32 with ultra-low latency (<1ms), enabling industrial-grade intelligent monitoring for motors, pumps, and rotating machinery.
+
+---
+
+# Key Features
+
+- Real-time Edge AI inference
+- TinyML deployment on ESP32
+- Multi-sensor fusion architecture
+- Ensemble anomaly detection
+- Adaptive EMA baseline tracking
+- Statistical + ML hybrid detection
+- Fault classification pipeline
+- Cloud-independent operation
+- Patent-ready ML architecture
+- Industrial predictive maintenance workflow
 
 ---
 
 # Edge-AI Inference Pipeline
+
+The deployed inference pipeline contains 5 sequential detection stages:
+
+1. Feature normalization
+2. OneClassSVM inference
+3. Mahalanobis distance analysis
+4. Physics-based sensor validation
+5. Weighted ensemble fusion scoring
 
 ![Architecture](docs/edge_ai_pipeline.png)
 
@@ -31,23 +52,49 @@ Patent-ready ML pipeline
 
 # ML Training Pipeline
 
+The ML training workflow includes:
+
+- Synthetic dataset generation
+- Feature scaling
+- OneClassSVM training
+- Autoencoder training
+- Mahalanobis threshold modeling
+- Ensemble fusion optimization
+- Export to ESP32 firmware headers
+
 ![ML Pipeline](docs/block_diagram.png)
 
 ---
 
-# Feature Distributions
+# Sensor Feature Distributions
+
+Visualization of normal vs anomalous motor behavior across:
+
+- RPM
+- Current
+- Vibration
+- Temperature
 
 ![Feature Distribution](ml/feature_distributions.png)
 
 ---
 
-# Correlation Matrix
+# Feature Correlation Matrix
+
+Correlation analysis between all motor sensor parameters.
 
 ![Correlation](results/correlation_matrix.png)
 
 ---
 
-# ROC Curves
+# ROC Curve Analysis
+
+Performance comparison between:
+
+- OneClassSVM
+- Autoencoder
+- Mahalanobis Distance
+- Ensemble Fusion
 
 ![ROC](results/roc_curves.png)
 
@@ -55,50 +102,171 @@ Patent-ready ML pipeline
 
 # Confusion Matrix
 
+Ensemble fusion model classification performance.
+
 ![Confusion Matrix](results/confusion_matrix.png)
 
 ---
 
-# Adaptive EMA Tracking
+# Adaptive EMA Baseline Tracking
+
+Dynamic baseline adaptation using Exponential Moving Average (EMA).
 
 ![EMA](results/adaptive_EMA_baseline.png.jpeg)
 
 ---
 
-# Hardware
+# Hardware Components
 
-- ESP32
-- ACS712
-- MPU6050
-- DS18B20
-- IR Sensor
-- L298N Driver
+| Component | Purpose |
+|---|---|
+| ESP32 | Edge AI Controller |
+| ACS712 | Current Sensing |
+| MPU6050 | Vibration Analysis |
+| DS18B20 | Temperature Monitoring |
+| IR Sensor | RPM Measurement |
+| L298N | Motor Driver |
 
 ---
 
-# ML Models
+# Machine Learning Models
 
 | Model | Purpose |
 |---|---|
 | OneClassSVM | Boundary anomaly detection |
 | Autoencoder | Reconstruction anomaly detection |
-| Mahalanobis | Statistical anomaly detection |
-| Ensemble Fusion | Final scoring |
+| Mahalanobis Distance | Statistical anomaly detection |
+| Ensemble Fusion | Final weighted fault scoring |
 
 ---
 
-# Performance
+# Fault Detection Capability
+
+The system detects:
+
+- Stall conditions
+- Overspeed faults
+- Overcurrent faults
+- Bearing wear anomalies
+- Thermal overload
+- Phase loss
+- Subtle ML anomalies
+
+---
+
+# Performance Metrics
 
 | Metric | Value |
 |---|---|
-| Ensemble AUC | 1.000 |
+| Ensemble ROC AUC | 1.000 |
 | False Positive Rate | 0.00% |
 | OneClassSVM Accuracy | 98% |
 | Mahalanobis Accuracy | 99% |
+| Inference Time | <1ms |
+| Sampling Rate | 2Hz |
 
 ---
 
-# Authors
+# Repository Structure
 
-Kesihambigai S  
-VIT University — ECE
+```bash
+Hybrid-Edge-AI-Motor-Fault-Detection/
+│
+├── docs/
+├── firmware/
+├── hardware/
+├── ml/
+├── results/
+├── media/
+└── data/
+```
+
+---
+
+# Firmware
+
+The ESP32 firmware performs:
+
+- Sensor acquisition
+- Feature normalization
+- ML inference
+- Ensemble scoring
+- EEPROM fault logging
+- Self-healing control logic
+
+Main firmware file:
+
+```bash
+firmware/motor_fault_detector.ino
+```
+
+---
+
+# Dataset
+
+The synthetic dataset contains:
+
+- 3000 normal samples
+- 1050 fault samples
+
+Features:
+
+- RPM
+- Current
+- Vibration
+- Temperature
+
+Dataset location:
+
+```bash
+data/synthetic_dataset.csv
+```
+
+---
+
+# Applications
+
+- Industrial motor monitoring
+- Smart factories
+- Predictive maintenance
+- HVAC systems
+- Agricultural pumps
+- Robotics
+- EV motor monitoring
+
+---
+
+# Future Improvements
+
+- MQTT cloud dashboard
+- Mobile app integration
+- Real industrial dataset collection
+- TinyML optimization
+- Quantized TensorFlow Lite deployment
+- Transformer-based anomaly detection
+
+---
+
+# Patent-Relevant Innovations
+
+- Edge-only AI inference
+- Ensemble anomaly fusion
+- Adaptive EMA baseline tracking
+- Physics-aware anomaly validation
+- Multi-layer intelligent fault detection
+
+Patent claims available in:
+
+```bash
+docs/patent_claims.md
+```
+
+---
+
+# Author
+
+**Kesihambigai S**  
+B.Tech Electronics and Communication Engineering  
+VIT University
+
+---

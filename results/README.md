@@ -5,3 +5,5 @@ Contains:
 - Confusion matrices
 - Serial monitor logs
 - Performance metrics
+- Correlation matrices
+- adaptive baseline EMA tracking 

@@ -1,0 +1,10 @@
+Component,Quantity,Cost_INR
+ESP32 DevKit,1,350
+ACS712 Current Sensor,1,150
+MPU6050 IMU,1,120
+DS18B20 Temperature Sensor,1,100
+IR Speed Sensor,1,80
+L298N Driver,1,150
+Breadboard,1,100
+Jumper Wires,1,100
+DC Motor,1,500

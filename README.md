@@ -321,6 +321,8 @@ Media location:
 media/
 ```
 
+![OUTPUT](media/output2.png)
+
 ---
 
 # Applications

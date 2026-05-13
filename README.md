@@ -1,6 +1,6 @@
 # Hybrid Edge-AI Motor Fault Detection & Self-Healing System
 
-ESP32-based intelligent motor monitoring and predictive maintenance system using Edge AI, TinyML, and multi-sensor fusion for real-time fault detection without cloud dependency.
+ESP32-based intelligent motor monitoring and predictive maintenance system using Edge AI, TinyML, and multi-sensor fusion for real-time fault detection without cloud dependency. :contentReference[oaicite:0]{index=0}
 
 ---
 
@@ -116,6 +116,22 @@ Dynamic baseline adaptation using Exponential Moving Average (EMA).
 
 ---
 
+# Autoencoder Architecture
+
+The Autoencoder compresses motor sensor patterns into latent representations for reconstruction-based anomaly detection.
+
+![Autoencoder](ml/autoencoder.png)
+
+---
+
+# OneClassSVM Results
+
+The OneClassSVM model learns the normal operational boundary of the motor system.
+
+![OCSVM](ml/ocsvm.png)
+
+---
+
 # Hardware Components
 
 | Component | Purpose |
@@ -167,11 +183,32 @@ The system detects:
 
 ---
 
+# Firmware Pipeline
+
+```text
+Sensor Readings
+    ↓
+Feature Scaling
+    ↓
+OneClassSVM Inference
+    ↓
+Autoencoder Reconstruction
+    ↓
+Mahalanobis Distance
+    ↓
+Fusion Scoring
+    ↓
+Fault Classification
+```
+
+---
+
 # Repository Structure
 
 ```bash
 Hybrid-Edge-AI-Motor-Fault-Detection/
 │
+├── README.md
 ├── docs/
 ├── firmware/
 ├── hardware/
@@ -179,6 +216,46 @@ Hybrid-Edge-AI-Motor-Fault-Detection/
 ├── results/
 ├── media/
 └── data/
+```
+
+---
+
+# Folder Descriptions
+
+| Folder | Purpose |
+|---|---|
+| docs | Reports, diagrams, patent claims |
+| firmware | ESP32 firmware and exported ML headers |
+| hardware | Wiring diagrams and BOM |
+| ml | ML training pipeline and visualizations |
+| results | Evaluation outputs and metrics |
+| media | Screenshots and visual outputs |
+| data | Datasets and logs |
+
+---
+
+# Documentation & Presentation
+
+## Project Report
+
+Detailed project documentation:
+
+```bash
+docs/motor_fault_detector_report.docx
+```
+
+---
+
+## Project Presentation
+
+Presentation files:
+
+```bash
+docs/motor_fault_presentation.pdf
+```
+
+```bash
+docs/motor_fault_presentation.pptx
 ```
 
 ---
@@ -224,6 +301,26 @@ data/synthetic_dataset.csv
 
 ---
 
+# Media Outputs
+
+The repository includes:
+
+- Training screenshots
+- ROC curve visualizations
+- Confusion matrices
+- Autoencoder outputs
+- OCSVM outputs
+- EMA tracking plots
+- Correlation matrices
+
+Media location:
+
+```bash
+media/
+```
+
+---
+
 # Applications
 
 - Industrial motor monitoring
@@ -260,6 +357,31 @@ Patent claims available in:
 ```bash
 docs/patent_claims.md
 ```
+
+---
+
+# Research Domains
+
+- Edge AI
+- TinyML
+- Predictive Maintenance
+- Industrial AI
+- Embedded Machine Learning
+- Explainable Anomaly Detection
+
+---
+
+# Deployment
+
+The complete system runs directly on ESP32 hardware without cloud dependency.
+
+Exported outputs include:
+
+- OneClassSVM header
+- Autoencoder header
+- TFLite models
+- ROC curves
+- Confusion matrices
 
 ---
 

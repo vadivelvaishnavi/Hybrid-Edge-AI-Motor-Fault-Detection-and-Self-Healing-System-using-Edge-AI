@@ -10,6 +10,10 @@
 | EEPROM Write Time | 5ms |
 | Flash Usage | 380KB |
 | SRAM Usage | 42KB |
+| Ensemble AUC | 1.000 |
+| False Positive Rate | 0.00% |
+| Mahalanobis Accuracy | 99% |
+| Autoencoder Accuracy | 96% |
 
 ---
 
@@ -22,3 +26,14 @@
 - Bearing Wear
 - Thermal Overload
 - ML Subtle Fault
+
+
+---
+
+# Runtime
+
+| Metric | Value |
+|---|---|
+| Inference Time | <1ms |
+| Flash Usage | 380KB |
+| SRAM Usage | 42KB |

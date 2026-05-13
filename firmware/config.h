@@ -1,0 +1,15 @@
+#pragma once
+
+#define SAMPLE_INTERVAL_MS 500
+#define RPM_STALL 50
+#define RPM_OVERSPEED 2400
+
+#define TEMP_WARNING 65
+#define TEMP_CRITICAL 80
+
+#define CURRENT_WARNING 8
+#define CURRENT_CRITICAL 12
+
+#define EMA_ALPHA 0.05
+
+#define EEPROM_SIZE 512

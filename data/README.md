@@ -2,4 +2,3 @@
 
 Contains:
 - Synthetic datasets
-- Sample logs

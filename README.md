@@ -25,7 +25,7 @@ Patent-ready ML pipeline
 
 # Edge-AI Inference Pipeline
 
-![Architecture](docs/architecture.png)
+![Architecture](docs/edge_ai_pipeline.png)
 
 ---
 
@@ -49,7 +49,7 @@ Patent-ready ML pipeline
 
 # ROC Curves
 
-![ROC](results/roc_curve.png)
+![ROC](results/roc_curves.png)
 
 ---
 

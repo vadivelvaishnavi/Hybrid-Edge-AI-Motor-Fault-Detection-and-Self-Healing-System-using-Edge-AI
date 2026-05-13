@@ -37,7 +37,7 @@ Patent-ready ML pipeline
 
 # Feature Distributions
 
-![Feature Distribution](ml/saved_models/feature_distributions.png)
+![Feature Distribution](ml/feature_distributions.png)
 
 ---
 
@@ -61,7 +61,7 @@ Patent-ready ML pipeline
 
 # Adaptive EMA Tracking
 
-![EMA](ml/plots/adaptive_baseline.png)
+![EMA](results/adaptive_EMA_baseline.png.jpeg)
 
 ---
 

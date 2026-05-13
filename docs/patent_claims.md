@@ -1,31 +1,19 @@
 # Patent Claims
 
-## Claim 1
-Multi-sensor acquisition system.
+## Claim  — Edge AI Inference
+All models execute directly on ESP32 without cloud dependency.
 
-## Claim 2
-Edge-only ML inference.
+---
 
-## Claim 3
-Weighted fusion scoring system.
+## Claim  — Weighted Ensemble Fusion
+OneClassSVM, Autoencoder, and Mahalanobis models are combined using weighted fusion scoring.
 
-## Claim 4
-Explainable fault classification.
+---
 
-## Claim 5
-Graduated corrective actuation.
+## Claim  — Adaptive EMA Baseline
+Dynamic motor baseline tracking using exponential moving average.
 
-## Claim 6
-EEPROM persistent fault logging.
+---
 
-## Claim 7
-Adaptive EMA baseline.
-
-## Claim 8
-Physics cross-validation.
-
-## Claim 9
-Dynamic thermal threshold.
-
-## Claim 10
-Autonomous recovery mechanism.
+## Claim  — Complete Fault Detection Method
+Sensor acquisition → normalization → inference → fusion → classification.

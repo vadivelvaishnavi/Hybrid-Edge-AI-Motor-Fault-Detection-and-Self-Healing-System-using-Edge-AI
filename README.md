@@ -79,6 +79,14 @@ Visualization of normal vs anomalous motor behavior across:
 
 ---
 
+# Confusion Matrix
+
+Ensemble fusion model classification performance.
+
+![Confusion Matrix](results/confusion_matrix.png)
+
+---
+
 # Feature Correlation Matrix
 
 Correlation analysis between all motor sensor parameters.
@@ -97,14 +105,6 @@ Performance comparison between:
 - Ensemble Fusion
 
 ![ROC](results/roc_curves.png)
-
----
-
-# Confusion Matrix
-
-Ensemble fusion model classification performance.
-
-![Confusion Matrix](results/confusion_matrix.png)
 
 ---
 
@@ -142,6 +142,8 @@ The OneClassSVM model learns the normal operational boundary of the motor system
 | DS18B20 | Temperature Monitoring |
 | IR Sensor | RPM Measurement |
 | L298N | Motor Driver |
+
+![Hardware](hardware/hardware.jpeg)
 
 ---
 

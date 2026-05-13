@@ -14,12 +14,12 @@ ESP32-based intelligent motor monitoring system using:
 
 # Features
 
-✅ Edge inference (<1ms)  
-✅ Multi-sensor fusion  
-✅ TinyML deployment on ESP32  
-✅ Ensemble anomaly detection  
-✅ Adaptive EMA baseline  
-✅ Patent-ready ML pipeline  
+Edge inference (<1ms)  
+Multi-sensor fusion  
+TinyML deployment on ESP32  
+Ensemble anomaly detection  
+Adaptive EMA baseline  
+Patent-ready ML pipeline  
 
 ---
 

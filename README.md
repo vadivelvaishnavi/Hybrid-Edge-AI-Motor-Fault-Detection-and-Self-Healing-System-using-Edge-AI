@@ -5,7 +5,7 @@
 
 # Hybrid Edge-AI Motor Fault Detection & Self-Healing System
 
-ESP32-based intelligent motor monitoring and predictive maintenance system using Edge AI, TinyML, and multi-sensor fusion for real-time fault detection without cloud dependency. :contentReference[oaicite:0]{index=0}
+ESP32-based intelligent motor monitoring and predictive maintenance system using Edge AI, TinyML, and multi-sensor fusion for real-time fault detection without cloud dependency. 
 
 ---
 

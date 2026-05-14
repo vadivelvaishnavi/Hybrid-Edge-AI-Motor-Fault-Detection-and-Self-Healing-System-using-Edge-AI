@@ -428,7 +428,10 @@ B.Tech Electronics and Communication Engineering
 VIT University <br>
 **Dishika G** <br>
 B.Tech Electronics and Communication Engineering  <br>
-VIT University
+VIT University,<br>
+**V VAISHNAVI** <br>
+B.Tech Electronics and Communication Engineering  <br>
+VIT University,<br>
 
 
 ---

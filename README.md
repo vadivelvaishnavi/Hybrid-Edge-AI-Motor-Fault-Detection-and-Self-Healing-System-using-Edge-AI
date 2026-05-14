@@ -41,7 +41,6 @@ The system performs all inference locally on ESP32 with ultra-low latency (<1ms)
 
 ---
 #  Tech Stack & Requirements
-#  Tech Stack & Requirements
 
 <div align="center">
 
@@ -58,8 +57,6 @@ The system performs all inference locally on ESP32 with ultra-low latency (<1ms)
 </div>
 
 ---
----
-
 # Edge-AI Inference Pipeline
 
 The deployed inference pipeline contains 5 sequential detection stages:

@@ -8,7 +8,6 @@
 ESP32-based intelligent motor monitoring and predictive maintenance system using Edge AI, TinyML, and multi-sensor fusion for real-time fault detection without cloud dependency. :contentReference[oaicite:0]{index=0}
 
 ---
-
 # Overview
 
 This project implements a complete Edge-AI motor protection pipeline on ESP32 using:
